@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz das Divas 💖</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main class="quiz-container">
+
+        <header class="topo">
+            <span class="coroa">👑</span>
+            <p class="etiqueta">PINK CLUB ✨</p>
+            <h1>Quiz das Divas</h1>
+            <p class="subtitulo">
+                Teste seus conhecimentos, gata! 💋
+            </p>
+        </header>
+
+        <!-- Tela das perguntas -->
+        <section id="telaQuiz">
+
+            <div class="info-quiz">
+                <span id="numeroPergunta">Pergunta 1 de 7</span>
+                <span id="pontuacao">💗 0 pontos</span>
+            </div>
+
+            <div class="progresso">
+                <div id="barraProgresso"></div>
+            </div>
+
+            <div class="pergunta-area">
+                <span class="decoracao">✿</span>
+                <h2 id="pergunta">Carregando pergunta...</h2>
+                <p id="instrucao">Escolha a alternativa certa, diva!</p>
+            </div>
+
+            <div id="alternativas" class="alternativas"></div>
+
+            <p id="feedback" class="feedback" aria-live="polite"></p>
+
+            <button id="btnProxima" class="btn-principal" hidden>
+                Próxima pergunta 💕
+            </button>
+
+        </section>
+
+        <!-- Tela de resultado -->
+        <section id="telaResultado" hidden>
+            <div class="resultado-icone" id="iconeResultado">👑</div>
+
+            <p class="etiqueta">SEU RESULTADO</p>
+            <h2 id="tituloResultado">Arrasou, diva!</h2>
+            <p id="mensagemResultado"></p>
+
+            <div class="placar-final">
+                <span>Você acertou</span>
+                <strong id="acertosFinais">0/7</strong>
+                <span>perguntas 💖</span>
+            </div>
+
+            <p id="fraseFinal" class="frase-final"></p>
+
+            <button id="btnReiniciar" class="btn-principal">
+                Jogar novamente ✨
+            </button>
+        </section>
+
+        <footer>
+            feito com amor, gloss e glitter 💗
+        </footer>
+
+    </main>
+
+    <script src="js/scprit.js"></script>
+</body>
+</html>
